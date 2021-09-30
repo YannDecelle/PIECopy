@@ -1,0 +1,222 @@
+#bloc{
+    width: 80%;
+    margin: 3rem 0 3rem 0;
+    display: flex;
+    flex-direction: row;
+  
+}
+
+.bloc_gauche{
+width: 50%;
+margin-left: 100px;
+}
+
+a{
+    outline: none !important;
+    text-decoration: none !important;
+}
+
+
+#img_firstposts{
+   width: 100%;
+    height: 100%;
+    opacity: 90%;
+}
+
+.img_posts{
+    width: 360px;
+    height: 250px;
+    opacity: 90%;
+   
+}
+.containere{
+    position: relative;
+  
+}
+
+.desc_posts{
+    position: absolute;
+    bottom: 8px;
+    left:32px;
+}
+
+.desc{
+font-size: 24px;
+color: white;
+}
+
+.date{
+    font-size: 16px;
+    color: white;
+}
+.tagname_posts{
+    font-size: 16px;
+    color: black;
+    margin: 0;
+}
+.tagcont_posts{
+    display: flex;
+    padding: 2px 5px 2px 5px;
+   
+    background-color: white;
+    border: 2px  solid grey;
+    margin-right: 15px;
+}
+
+.tag_posts{
+    display: flex;
+    flex-direction: row;
+}
+
+.date_posts{
+    img{
+        margin-top: 3px;
+        width:16px ;
+        height: 16px;
+        margin-right: 10px;
+    }
+display: flex;
+flex-direction: row;
+
+}
+
+.news_separator{
+    border: 2px solid black;
+    width: 80%;
+    padding: 15px 0 15px 15px;
+    margin: 0 0 30px 100px;
+    color: #5FBE58 ;
+
+}
+#container_allposts{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.container_post{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 45px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+}
+.img_post{
+    width: 15%;
+}
+.desc_post{
+    width: 80%;
+    padding-left: 50px;
+}
+.img_listPosts{
+    height: 200px;
+    width: 100%;
+}
+.titre_post{
+    padding: 10px 0 10px 0;
+    font-size: 28px;
+    color: black;
+}
+.date_post{ 
+    font-size: 16px;
+    opacity: 50%;
+    color: black;
+   
+}
+.description_post{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    font-size: 22px;
+    opacity: 50%;
+    color: black;
+    width: 70%;
+    
+}
+.droite{
+    margin-left: 100px;
+}
+@media screen and (max-width: 1316px) {
+    #bloc{
+        width: 90%;
+       
+      
+    }
+}
+@media screen and (max-width:1220px) {
+   .tagcont_posts:nth-child(2){
+       display: none;
+   }
+}
+@media screen and (max-width: 1060px) {
+.news_separator{
+ border: none;
+ padding: 0;
+ margin: 30px 0 30px 50px;
+ color: #5FBE58;
+ width: auto;
+}
+.tout {
+    display: none !important;
+}
+.tagcont_posts:nth-child(2){
+    display: block;
+}
+.container_post {
+     padding-left: 0;
+}
+.img_post{
+    width: 30%;
+}
+.description_post{
+
+    width: 90%;
+    
+}
+
+}
+@media screen and (max-width: 769px) {
+    .desc_post{
+        width: 90%;
+        padding-left: 30px;
+    }
+    .titre_post{
+        font-size: 22px;
+            }
+    .description_post{
+        font-size: 16px;
+        width: 95%;  
+    }
+    .tagname_posts{
+        font-size: 16px;
+        color: black;
+        margin: 0;
+    }
+    .tagcont_posts{
+        display: flex;
+        padding: 2px 5px 2px 5px;
+        border: 1px  solid grey;
+        margin-right: 15px;
+    }
+    .img_post{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 648px) {
+       .img_listPosts{
+            width: 80%;
+            height: 150px;
+        }
+        .desc_post{         
+            padding-left: 10px;
+        }
+}
+@media screen and (max-width: 424px) {
+    .img_post{
+        display: none;
+    }
+}

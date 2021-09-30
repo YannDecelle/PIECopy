@@ -1,0 +1,132 @@
+.home_news{
+    background-image: url("/wp-content/themes/pie/img/fondnews.png");
+    background-size: cover ;
+    background-repeat: no-repeat;
+    height: 900px;
+    #button_en_savoir_plus{
+        padding-top: 30px;
+        display: flex;
+       align-items: center;
+       justify-content: center;
+        width: 100%;
+        button{
+                     
+            text-align: center;
+         
+            color: green;
+            text-transform: uppercase;
+            img{
+              
+                padding-left: 10px;
+            }
+        }
+    }
+
+    h2{
+        padding:30px 0 30px 0;
+        text-align: center;
+        color:green ;
+        font-size: 38px;
+    }
+
+   
+}
+
+#home_events{
+
+    h2{
+        padding:30px 0 30px 0;
+        text-align: center;
+        color:green ;
+        font-size: 38px;
+    }
+
+    #button_events{
+        padding-top: 30px;
+        display: flex;
+       align-items: center;
+       justify-content: center;
+        width: 100%;
+        button{
+                     
+            text-align: center;
+         
+            color: green;
+            text-transform: uppercase;
+            img{
+              
+                padding-left: 10px;
+            }
+        }
+    }
+    #nextevents{
+        margin: 10px;
+        overflow-x: hidden;
+    }
+}
+
+
+
+.home_cardposte{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 25%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#magie{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#desc_home{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2{
+        padding:30px 0 30px 0;
+        text-align: center;
+        color:green ;
+        font-size: 38px;
+    }
+    p{
+        font-size: 16px;
+        width: 80%;
+        padding-bottom: 30px;
+    }
+}
+@media screen and (max-width: 1025px) {
+    .home_cardposte{
+        height: 600px;
+    }
+
+  }
+
+
+
+  @media screen and (max-width: 769px) {
+
+    .home_cardposte:last-child{
+        display: none;
+    }
+    .home_cardposte{   
+        width: 40%;
+ 
+    }
+  }
+  @media screen and (max-width: 551px) {
+    .home_cardposte:nth-child(1){   
+        display: none;
+ 
+    }
+    .home_cardposte{
+        width: 80%;
+        height: 550px;
+    }
+
+}
+

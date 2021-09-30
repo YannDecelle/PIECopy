@@ -1,0 +1,201 @@
+.auth-main {
+
+  #auth-img {
+    position: fixed;
+    height: 100%;
+    width: 50%;
+    top: 0;
+  }
+
+  .auth-block {
+    width: 50%;
+    float: right;
+
+    .msg-block {
+      width: 80%;
+      margin: 0 auto 50px auto;
+      background-color: var(--red);
+      padding: 15px;
+      color: white;
+    }
+
+    #error-block {
+      background-color: var(--red);
+    }
+
+    #success-block {
+      background-color: var(--green);
+    }
+
+    .custom-logo-link {
+      width: 15%;
+      display: block;
+      margin: auto;
+    }
+
+    #auth-block-title {
+      text-align: center;
+      margin-top: -5px;
+    }
+
+    .auth-block-form {
+      width: 70%;
+      margin: 70px auto 0 auto;
+
+      .auth-block-form-input {
+        border-bottom: solid 1px var(--grey);
+        margin-top: 50px;
+
+        i {
+          color: var(--green);
+          font-size: 1.6em;
+          margin-right: 10px;
+        }
+
+        input {
+          border: none;
+          outline: none;
+          font-size: 1.6em;
+          width: 70%;
+        }
+
+        textarea {
+          outline: none;
+          border: none;
+          resize: none;
+          height: 100px;
+          font-size: 1.4em;
+        }
+
+        input::placeholder, textarea::placeholder {
+          opacity: 0.3;
+        }
+      }
+
+      .auth-block-form-remember {
+        margin-top: 10px;
+
+        input[type=checkbox]:checked {
+          background-color: var(--green);
+        }
+      }
+
+      #auth-block-forget {
+        margin-top: 30px;
+        text-align: right;
+        font-size: 1.1em;
+
+        a {
+          color: var(--green);
+        }
+      }
+
+      #forget-pass {
+        color: var(--green);
+        text-decoration: underline;
+      }
+
+      #forget-pass:hover {
+        cursor: pointer;
+      }
+
+      #forget-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
+        width: 80%;
+        margin: auto;
+
+        #forget-content-msg {
+          width: 100%;
+          background-color: #d6d6d6;
+          color: #666666;
+          padding: 10px;
+          margin: 20px 0 -30px 0;
+        }
+
+        button {
+          width: 60%;
+          display: block;
+          margin: 20px auto;
+        }
+
+        button:hover {
+          cursor: pointer;
+          background-color: var(--green);
+          color: white;
+        }
+      }
+
+      > button {
+        width: 100%;
+        padding: 30px 0;
+        background-color: var(--light-grey);
+        border: none;
+        color: white;
+        font-size: 1.8em;
+        margin: 30px 0;
+      }
+
+      > button:hover {
+        cursor: pointer;
+        background-color: var(--grey);
+      }
+
+    }
+
+    #auth-block-type {
+      text-align: center;
+      font-size: 1.25em;
+
+      .auth-toggle {
+        color: var(--green);
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+
+  }
+
+}
+
+/* RESPONSIVE */
+
+/* IPAD */
+
+@media screen and (max-width: 768px) {
+
+  .auth-main {
+
+    #auth-img {
+      width: 20%;
+    }
+
+    .auth-block {
+      width: 80%;
+    }
+
+  }
+
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 414px) {
+
+  .auth-main {
+    display: block;
+
+    #auth-img {
+      display: none;
+    }
+
+    .auth-block {
+      width: 100%;
+      float: unset;
+      margin: auto;
+    }
+
+  }
+
+}

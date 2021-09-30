@@ -1,0 +1,193 @@
+.jesaispas{
+  text-decoration: none !important;
+  color: white !important;
+  
+}
+
+.page {
+  margin-bottom: 0;
+}
+
+.site-footer {
+
+  background: linear-gradient(var(--green), var(--dark_green));
+  padding: 60px 0 30px 0;
+
+  #footer-block {
+
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    color: white;
+
+    .custom-logo-link {
+
+      width: 25%;
+
+      img {
+        height: 350px;
+        object-fit: contain;
+        margin-top: 80px;
+        padding-bottom: 50px;
+      }
+
+    }
+
+    .footer-vertical-line {
+
+      border-left: 1px solid white;
+      display: inline-block;
+      margin-top: 45px;
+    }
+
+    div {
+
+      width: 20%;
+
+      .footer-title {
+
+        width: 70%;
+        margin: auto;
+        padding-bottom: 20px;
+
+        h2 {
+          font-size: var(--font-title);
+        }
+
+      }
+
+      p {
+        font-size: var(--font-text);
+      }
+
+      .footer-socials {
+        padding-top: 20px;
+        font-size: 60px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+    }
+
+  }
+
+  .footer-info {
+
+    text-align: center;
+    margin-top: 60px;
+    color: white;
+
+    font-size: var(--font-text);
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+  }
+
+}
+
+/* RESPONSIVE */
+
+/* IPAD ROTATE */
+
+@media screen and (max-width: 1400px) {
+  .site-footer {
+
+    #footer-block {
+
+      width: 100%;
+
+      .custom-logo-link {
+
+        width: 20%;
+
+        img {
+          margin-top: 40px;
+        }
+
+      }
+
+      div {
+
+        width: 30%;
+
+        .footer-title {
+
+          width: 80%;
+
+          h2 {
+            font-size: 1.8em;
+          }
+
+        }
+
+        p {
+          font-size: 1.3em;
+        }
+
+        .footer-socials {
+          font-size: 3em;
+        }
+
+      }
+
+    }
+  }
+}
+
+/* IPAD */
+
+@media screen and (max-width: 768px) {
+  .site-footer {
+    .footer-info {
+      width: 90%;
+      margin: 30px auto 0 auto;
+      font-size: 1.2em;
+    }
+  }
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 700px) {
+
+  .site-footer {
+
+    #footer-block {
+      display: block;
+
+      .custom-logo-link {
+        display: none;
+      }
+
+      .footer-vertical-line {
+        display: none;
+      }
+
+      div {
+        width: 90%;
+        margin: 0 auto 50px auto;
+        text-align: center;
+        #cache{
+          display: none;
+        }
+        .footer-socials {
+         display: none;
+        }
+      }
+
+    }
+
+    .footer-info {
+      font-size: 1em;
+    }
+
+  }
+
+}

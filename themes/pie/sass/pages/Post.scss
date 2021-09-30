@@ -1,0 +1,171 @@
+.title_poste{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 56px;
+    padding-bottom: 30px;
+    color: green;
+}
+.div_img_poste{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.img_poste{
+    width: 50%;
+    height: 400px;
+}
+.test{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div_desc_poste{
+    width: 50%;  
+    flex-direction: column;
+   margin-top: 30px;
+}
+
+.description_poste{
+    color: black;
+    font-size: 16px;
+    
+}
+
+
+.containerposte{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.cardposte{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 25%;
+    background-color: grey;
+    
+    margin-bottom: 200px;
+}
+.date_poste{
+    font-size: 24px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.photo_poste{
+    width: 100%;
+    height: 45%;
+}
+.titre_poste{
+    font-size: 36px;
+    padding-left: 20px;
+    padding-top: 5px;
+    
+}
+.desc_poste{
+    font-size: 16px;
+    padding-left: 20px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 8;
+    overflow: hidden;
+    text-align: left;
+
+}
+.poste_desc{
+    width: 86%;
+    height: auto;
+}
+.lasuite{
+    padding-left: 20px;
+}
+.Lire{
+   
+    
+    padding: 2px 1px 0;
+  }
+  
+ 
+  
+  .Lire:visited {
+    color: white;
+  }
+ 
+ 
+  
+ 
+  
+ 
+
+  @media screen and (max-width: 1025px) {
+    .img_poste{
+        width: 70%;
+    }
+    .div_desc_poste{
+        width: 70%;      
+    }
+    .photo_poste{
+        height: 35%;
+    }
+    .cardposte{
+        height: 600px;
+    }
+
+  }
+
+
+
+  @media screen and (max-width: 769px) {
+    .title_poste{
+        font-size: 48px;
+   
+    }
+    .img_poste{  
+        height: 300px;
+    }
+    .photo_poste{
+        height: 30%;
+    }
+    .cardposte:last-child{
+        display: none;
+    }
+    .cardposte{   
+        width: 40%;
+ 
+    }
+  }
+  @media screen and (max-width: 551px) {
+
+    .img_poste {
+        width: 100%;
+        height: 200px;
+    }
+    .div_desc_poste{
+        width: 90%;       
+    }
+    .cardposte:nth-child(1){   
+        display: none;
+ 
+    }
+    .cardposte{
+        width: 80%;
+        height: 550px;
+    }
+    .date_poste{
+        font-size: 20px;
+    }
+    .photo_poste{
+        height: 35%;
+    }
+    .titre_poste{
+        font-size: 28px;    
+    }
+    .poste_desc{
+        width: 90%;
+    }
+
+}

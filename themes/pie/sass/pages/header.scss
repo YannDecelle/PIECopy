@@ -1,0 +1,314 @@
+#site-header {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+  background-color: white;
+  position: relative;
+  z-index: 10;
+  padding-bottom: 10px;
+
+  //BURGER
+  #hamburger-button {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    outline: none;
+    background:white none;
+    border: none;
+    height: 100%;
+    width: 20%;
+    font-size: 1.5em;
+    color: var(--middle_green);
+  }
+
+  #hamburger-overlay {
+    display: none;
+    position: fixed;
+    z-index: 15;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .4);
+  }
+
+  #hamburger-sidebar {
+    display: none;
+    position: fixed;
+    width: 85%;
+    z-index: 20;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    transform: translate(-100%);
+    transition: transform .2s ease-out;
+  }
+
+  #hamburger-sidebar-header {
+
+    background-color: white;
+    padding: 20px 0;
+    border-bottom: solid 1px var(--green);
+    text-align: center;
+
+    img {
+      width: 35%;
+      border-radius: 50%;
+      display: block;
+      margin: auto;
+    }
+
+    a {
+      color: var(--green);
+      font-size: 1.5em;
+    }
+
+  }
+
+  #hamburger-sidebar-body {
+
+    padding-top: 20px;
+
+    ul {
+      list-style: none;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+
+      li {
+        width: 90%;
+        margin: 10px auto 0 auto;
+        color: var(--green);
+        padding: 5px 0 5px 5px;
+        font-size: 28px;
+
+        a {
+          display: block;
+          width: 100%;
+          padding: 10px 6%;
+        }
+
+      }
+    }
+  }
+
+  //NORMAL
+  a {
+    text-decoration: none;
+    color: var(--black);
+  }
+
+  #header-left {
+
+    display: flex;
+
+    .custom-logo-link {
+
+      width: 150px;
+
+      img {
+        width: 75%;
+        object-fit: contain;
+        margin: auto;
+        display: block;
+      }
+
+    }
+
+    #header-left-slogan {
+
+      margin-top: 20px;
+
+      h1 {
+        font-size: var(--font-title);
+        font-weight: bold;
+      }
+
+      p {
+        font-weight: bold;
+      }
+
+    }
+
+  }
+
+  #header-right {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    list-style-type: none;
+    margin: 40px 0 0 0;
+    padding: 0;
+
+    li {
+
+      padding: 0 30px;
+
+      a {
+        font-size: var(--font-link);
+      }
+
+      a#login-link {
+        font-size: var(--font-icon);
+
+      }
+
+      a:hover {
+        color: var(--green);
+      }
+    }
+
+  }
+
+}
+
+//BURGER
+#site-header.hamburger-activated {
+
+  //BURGER
+  #hamburger-overlay, #hamburger-sidebar {
+    display: block;
+  }
+
+  #hamburger-sidebar {
+    transform: translateX(0);
+  }
+}
+
+/* RESPONSIVE */
+
+/* IPAD ROTATE */
+
+@media screen and (max-width: 1024px) {
+
+  #site-header {
+
+    //NORMAL
+    a {
+      text-decoration: none;
+      color: var(--black);
+    }
+
+    #header-left {
+      width: 45%;
+      display: flex;
+
+      .custom-logo-link {
+        width: 12vh;
+        margin: 0 10px;
+
+        img {
+          width: 100%;
+        }
+
+      }
+
+      #header-left-slogan {
+
+        margin-top: 20px;
+
+        h1 {
+          font-size: 1.8em;
+        }
+
+      }
+
+    }
+
+    #header-right {
+
+      width: 50%;
+
+      li {
+
+        padding: 0 10px;
+
+        a {
+          font-size: 1.4em;
+        }
+
+        a#login-link {
+          font-size: 1.7em;
+
+        }
+      }
+
+    }
+
+  }
+
+}
+
+/* IPAD */
+
+@media screen and (max-width: 768px) {
+
+  #site-header {
+
+    display: block;
+    padding: 5px 0 0 0;
+
+    #header-left {
+      width: 100%;
+      .custom-logo-link {
+        width: 9vh;
+      }
+    }
+
+    #hamburger-button {
+      display: block;
+    }
+
+    #header-right {
+      display: none;
+    }
+
+  }
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 414px) {
+
+  #site-header {
+
+    #header-left {
+
+      .custom-logo-link {
+
+        width: 17%;
+        margin: 0 10px;
+
+        img {
+          width: 100%;
+        }
+
+      }
+
+      #header-left-slogan {
+
+        margin-top: 10px;
+
+        h1 {
+          font-size: 1.6em;
+        }
+
+        p {
+          margin-top: -10px;
+          font-size: 1em;
+        }
+
+      }
+
+    }
+
+  }
+
+}

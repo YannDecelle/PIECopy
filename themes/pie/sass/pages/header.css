@@ -1,0 +1,52 @@
+#site-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+#site-header a {
+  text-decoration: none;
+  color: var(--black);
+}
+#site-header #header-left {
+  display: flex;
+}
+#site-header #header-left .custom-logo-link {
+  width: 150px;
+}
+#site-header #header-left .custom-logo-link img {
+  width: 75%;
+  object-fit: contain;
+  margin: auto;
+  display: block;
+}
+#site-header #header-left #header-left-slogan h1 {
+  font-size: var(--font-title);
+  font-weight: bold;
+}
+#site-header #header-left #header-left-slogan p {
+  margin-top: -25px;
+  font-weight: bold;
+}
+#site-header #header-right {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 40px 0 0 0;
+  padding: 0;
+}
+#site-header #header-right li {
+  padding: 0 30px;
+}
+#site-header #header-right li a {
+  font-size: var(--font-link);
+}
+#site-header #header-right li a#login-link {
+  font-size: var(--font-icon);
+}
+#site-header #header-right li a:hover {
+  color: var(--green);
+}
+
+/*# sourceMappingURL=header.css.map */
